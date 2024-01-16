@@ -1,0 +1,40 @@
+{
+   "manifest_version": 2,
+   "name": "无障碍助手插件",
+   "version": "1.0",
+   "description": "linfy-GXU；联系我们：linxiaoyu@gmail.com",
+   "icons": {
+      "128": "images/128.png",
+      "16": "images/16.png",
+      "48": "images/48.png"
+   },
+   
+   "browser_action": {
+      "default_icon": "images/16.png",
+      "default_title": "无障碍助手插件",
+      "default_popup": "popup.html"
+   },
+
+   "content_scripts": [{
+      "all_frames": false,
+      "css": ["css/style.css"],
+      "js": [ 
+         "lib/jquery.min.js", 
+         "js/insertJs.js"
+      ],
+      "matches": ["*://*/*"],
+       "run_at": "document_start"
+   }],
+
+
+   
+   "permissions": [ 
+      "tabs",
+      "activeTab",
+      "storage"
+   ],
+   
+   "web_accessible_resources": [ "*" ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
+

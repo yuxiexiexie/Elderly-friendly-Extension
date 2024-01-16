@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link href="lib/layui/css/layui.css" rel="stylesheet">
+
+	<style>
+		body {width:400px!important;margin:10px}
+		fieldset{
+			text-align: center;
+		}
+		legend{
+			text-align: left;
+		}
+		.layui-form-switch{
+			margin-top:0px;
+			margin-right: 18px;
+		}
+	</style>
+</head>
+<body>
+	<form class="layui-form" action="">
+		<fieldset class="layui-elem-field">
+		  <legend>页面缩放</legend>
+		  <div class="layui-field-box">
+		  	<button type="button" class="layui-btn layui-btn-sm" id="page_da">
+			  <i class="layui-icon layui-icon-addition"></i>
+			  页面放大
+			</button>
+		  	<button type="button" class="layui-btn layui-btn-sm layui-bg-red" id="page_xiao">
+			  <i class="layui-icon layui-icon-subtraction"></i>
+			  页面缩小
+			</button>
+		  </div>
+		</fieldset>
+		<fieldset class="layui-elem-field">
+		  <legend>页面模式</legend>
+		  <div class="layui-field-box">
+	        <input type="checkbox" id='switch1' name="open" lay-skin="switch" lay-filter="switch1" lay-text="暗黑|明亮">
+			<input type="radio" name="s" class="bg_color" value="#e91e63" title="亮色1">
+			<input type="radio" name="s" class="bg_color" value="#6495ed" title="亮色2">
+			<input type="radio" name="s" class="bg_color" value="#ffff00" title="亮色3">		
+		  </div>
+		</fieldset>
+		<fieldset class="layui-elem-field">
+		  <legend>鼠标调节</legend>
+		  <div class="layui-field-box">
+		  	<button type="button" class="layui-btn layui-btn-sm" id="shu_da">
+			  <i class="layui-icon layui-icon-addition"></i>
+			  鼠标放大
+			</button>
+		  	<button type="button" class="layui-btn layui-btn-sm layui-bg-red" id="shu_xiao">
+			  <i class="layui-icon layui-icon-subtraction"></i>
+			  鼠标缩小
+			</button>
+		  </div>
+		</fieldset>
+		<fieldset class="layui-elem-field">
+		  <legend>十字线辅助</legend>
+		  <div class="layui-field-box">
+			<input type="checkbox" id='switch2' name="open" lay-skin="switch" lay-filter="switch2" lay-text="打开|关闭">
+		  </div>
+		</fieldset>
+	</form>
+
+	<script type="text/javascript" src="lib/layui/layui.js"></script>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>
+

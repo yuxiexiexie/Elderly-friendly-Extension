@@ -1,0 +1,43 @@
+
+/*暗黑*/
+html.an body *,html.an body{
+  background: #000000!important;
+  color: #fff;
+}
+
+/*十字线*/
+body.showline #x_div, body.showline #y_div{
+  display: block!important;
+}
+
+#x_div, #y_div { 
+  display: none;
+  position:fixed; 
+  top:0px;
+  left:0px; 
+  background-color:#e77777;
+  width:100%; 
+  height:5px; 
+  z-index: 9999999;
+}
+#y_div { 
+  display: none;
+  height:100%; 
+  width:5px; 
+}
+
+/*鼠标光标*/
+html * {
+  cursor: none!important;
+}
+.lfy_cursor {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  left: -100px;
+  cursor: none;
+  pointer-events: none;
+  z-index: 9999999;
+}
+
+
