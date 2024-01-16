@@ -10,4 +10,5 @@ the user experience can be improved, and the human-computer interaction communic
 2、隐私说明：插件自主开发，目前未联网使用，不涉及侵权问题。插件只与浏览器通信，不与服务器通信，不搜集用户信息，不涉及用户隐私。
 3、更新维护：可以根据需要在VScode修改优化代码，并在插件管理页面刷新以更新使用。
   
-PS:插件代码来自本人毕设文件代码，无偿提供  有任何使用问题联系邮箱：linxiaoyubuyi@gmail.com😊
+PS:插件代码来自本人毕设文件代码，无偿提供  
+  有任何使用问题联系邮箱：linxiaoyubuyi@gmail.com😊
